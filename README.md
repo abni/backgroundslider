@@ -13,10 +13,10 @@ angular
 angular-animate
 
 Drop the slider element into your HTML:
-´<slider images="images" index="index"></slider>´
+`<slider images="images" index="index"></slider>`
 
 Tell the slider which images to use from your controller:
-´$scope.images = [{src: 'images/img.jpg', caption: 'lorem ipsom'}];´
+`$scope.images = [{src: 'images/img.jpg', caption: 'lorem ipsom'}];`
 
 See example.html for more.
 
