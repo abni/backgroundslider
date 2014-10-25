@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="slideshow">
+<head>
+    <meta charset="UTF-8">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="dist/backgroundslider.css">
+    <style type="text/css">
+        html, body{
+            font-family: arial;
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            text-align: center;
+            font-size: 32px;
+        }
+        .caption{
+            text-align: center;
+            display: block;
+            margin-top: 70px;
+        }
+    </style>
+    
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+</head>
+
+<body ng-controller="slideshowCtrl">
+    <h2>Slideshow</h2>
+    <slider images="images" index="index"></slider>
+</body>
+
+<script>
+    var app = angular.module('slideshow', ['ngAnimate']);
+
+    app.controller('slideshowCtrl', function($scope){
+        'use strict';
+
+        $scope.images = [{
+            src: 'images/1.jpg',
+            caption: 'Photo: Adriano Roberto Vasconcelos. From Flikr'
+        },{
+            src: 'images/2.jpg',
+            caption: 'Photo: BAHARUL ISLAM. From Flikr'
+        },{
+            src: 'images/3.jpg',
+            caption: 'Photo: Adriano Roberto Vasconcelos. From Flikr'
+        }];
+
+    });
+</script>
+<script src="dist/backgroundslider.js"></script>
+</html>

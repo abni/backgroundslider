@@ -1,0 +1,15 @@
+<div class="slider">
+    <ul class="bg-slideshow">
+        <li ng-repeat="image in images" ng-show="image.visible" class="slide" style="background-image: url({{image.src}});">
+            <span class="caption">{{image.caption}}</span>
+        </li>
+    </ul>
+    <div class="arrows">
+        <a href="#" ng-click="prev()">
+            <span class="glyphicon glyphicon-chevron-left"> < </span>
+        </a>
+        <a href="#" ng-click="next()">
+            <span class="glyphicon glyphicon-chevron-right"> > </span>
+        </a>
+    </div>
+</div>
