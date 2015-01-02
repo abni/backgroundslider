@@ -1,5 +1,5 @@
 <div class="slider">
-    <ul class="bg-slideshow">
+    <ul class="bg-slideshow" ng-swipe-left="next()" ng-swipe-right="prev()">
         <li ng-repeat="image in images" ng-show="image.visible" class="slide" style="background-image: url({{image.src}});">
             <span class="caption">{{image.caption}}</span>
         </li>
